@@ -1,0 +1,4 @@
+include config.py.template
+include app.py
+include gunicorn.service
+include static/data/devicelist.json.template

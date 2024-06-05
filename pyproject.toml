@@ -1,0 +1,10 @@
+[project]
+name = "mqtt-flask"
+version = "1.0.0"
+dependencies = [
+    "flask","paho-mqtt","gunicorn"
+]
+
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"

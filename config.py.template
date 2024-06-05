@@ -1,0 +1,19 @@
+# mqtt client config
+BROKER = 'broker ip'
+PORT = 1883
+TOPIC = "/sys/plct/JM121fS3zw466qqW/set"
+
+CLIENT_ID = 'Mqtt-web'
+MACHINE_SN = 'test' 
+
+# mqtt authentication
+USERNAME = 'plct'
+PASSWORD = 'plct'
+
+# action reset's time is 10
+# action poweroff's time is 40
+# action poweron's time is 10
+POWERON_TIME = '10'
+POWEROFF_TIME= '40'
+RESET_TIME = '10' 
+
