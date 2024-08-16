@@ -1,0 +1,26 @@
+Source: mqtt-flask
+Section: python
+Priority: optional
+Maintainer: Bo YU <tsu.yubo@gmail.com>
+Build-Depends:
+ debhelper-compat (= 13),
+ dh-sequence-python3,
+ python3-all,
+ pybuild-plugin-pyproject,
+ python3-setuptools,
+Standards-Version: 4.7.0
+Homepage: https://github.com/yuzibo/mqtt-flask
+Vcs-Browser: https://github.com/yuzibo/mqtt-flask
+Vcs-Git: https://github.com/yuzibo/mqtt-flask
+Rules-Requires-Root: no
+
+Package: python3-mqtt-flask
+Architecture: all
+Depends: ${misc:Depends}, 
+ ${python3:Depends},
+ python3-flask,
+ python3-paho-mqtt,
+ gunicorn
+Description: external network API interface for the Mqtt service.
+ .
+ Now only support reset command

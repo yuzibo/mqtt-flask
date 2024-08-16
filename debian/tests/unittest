@@ -1,0 +1,14 @@
+#!/bin/sh
+set -efu
+
+## ok /usr/bin/bash -e development/runtests.sh
+pys="$(py3versions -s 2> /dev/null)"
+
+
+cp -a tests "$AUTOPKGTEST_TMP"
+cd "$AUTOPKGTEST_TMP/tests"
+
+for py in $pys; do
+	echo "=== $py ==="
+	HOME=/tmp xvfb-run -a $py -m  unittest --verbose 2>&1
+done

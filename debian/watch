@@ -1,0 +1,2 @@
+version=4
+https://github.com/yuzibo/mqtt-flask/tags .*/v?@ANY_VERSION@\.tar\.gz

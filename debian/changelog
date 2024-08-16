@@ -1,0 +1,6 @@
+mqtt-flask (0.0.1-1) unstable; urgency=medium
+
+  [ Bo YU ]
+  * Initial release. (Closes: #-1)
+
+ -- Bo YU <tsu.yubo@gmail.com>  Fri, 19 Jul 2024 15:07:28 +0800

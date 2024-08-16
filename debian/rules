@@ -1,0 +1,14 @@
+#!/usr/bin/make -f
+
+include /usr/share/dpkg/default.mk
+
+export PYBUILD_NAME=mqtt-flask
+#export PYBUILD_TEST_ARGS="python{version} -m unittest"
+
+%:
+	dh $@ --buildsystem=pybuild
+
+override_dh_auto_test:
+
+execute_before_dh_install:
+	cp config.py.template config.py

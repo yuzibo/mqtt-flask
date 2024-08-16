@@ -1,0 +1,3 @@
+app.py usr/lib/python3/dist-packages/mqtt_flask-1.0.0.dist-info/
+config.py usr/lib/python3/dist-packages/mqtt_flask-1.0.0.dist-info/
+gunicorn.service usr/lib/python3/dist-packages/mqtt_flask-1.0.0.dist-info/
