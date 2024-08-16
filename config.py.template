@@ -1,14 +1,18 @@
 # mqtt client config
-BROKER = 'broker ip'
-PORT = 1883
+
+# The BROKER is the ip of mqtt server
+BROKER = '192.168.*.*'
+PORT = 1883 
 TOPIC = "/sys/plct/JM121fS3zw466qqW/set"
 
-CLIENT_ID = 'Mqtt-web'
-MACHINE_SN = 'test' 
+#CLIENT_ID = 'JM121fS3zw466qqW'
+CLIENT_ID = 'debci'
+MACHINE_SN = 'debci' 
 
 # mqtt authentication
-USERNAME = 'plct'
-PASSWORD = 'plct'
+# filled with passwd for mosquitto
+USERNAME = '*'
+PASSWORD = '*'
 
 # action reset's time is 10
 # action poweroff's time is 40
