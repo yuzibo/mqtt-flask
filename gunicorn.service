@@ -4,10 +4,11 @@ After=network.target
 After=syslog.target
 
 [Service]
-User=username
-Group=groupname
-WorkingDirectory=/path/to/your/app
-ExecStart=/path/to/.venv/bin/gunicorn --workers 4 --bind 0.0.0.0:8000 webapp:app --access-logfile /var/webapps/api/log/access.log --error-logfile /var/log/webapps/api/log/error.log
+# user and Group within installing
+#User=debian
+#Group=debian
+WorkingDirectory=/home/debian/mqtt/mqtt-flask
+ExecStart=/usr/bin/gunicorn --workers 4 --bind 0.0.0.0:8000 app:app --access-logfile /var/log/webapps/api/log/access.log --error-logfile /var/log/webapps/api/log/error.log
 Restart=on-failure
 
 [Install]
